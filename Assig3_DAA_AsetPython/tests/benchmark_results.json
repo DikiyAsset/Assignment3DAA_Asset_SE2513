@@ -1,0 +1,79 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "logical_cpus": 8,
+    "timer": "time.perf_counter",
+    "warmup": "one untimed call per method per size; correctness calls also precede timing",
+    "boundary": "Includes algorithm and graph building. Excludes input parsing, IO and compilation."
+  },
+  "results": [
+    {
+      "n": 1000,
+      "m": 2500,
+      "seed": 32025,
+      "cost": -558076311333,
+      "kruskal": {
+        "seconds": [
+          0.005111799999212963,
+          0.005303900001308648,
+          0.003923100000974955
+        ],
+        "median": 0.005111799999212963
+      },
+      "prim": {
+        "seconds": [
+          0.008890200000678306,
+          0.005471000000397908,
+          0.006902299999637762
+        ],
+        "median": 0.006902299999637762
+      }
+    },
+    {
+      "n": 10000,
+      "m": 25000,
+      "seed": 41025,
+      "cost": -5548900356011,
+      "kruskal": {
+        "seconds": [
+          0.3012567999994644,
+          0.18237889999909385,
+          0.14337520000117365
+        ],
+        "median": 0.18237889999909385
+      },
+      "prim": {
+        "seconds": [
+          0.13126999999985856,
+          0.13491459999931976,
+          0.1332010000005539
+        ],
+        "median": 0.1332010000005539
+      }
+    },
+    {
+      "n": 100000,
+      "m": 250000,
+      "seed": 131025,
+      "cost": -54769488667586,
+      "kruskal": {
+        "seconds": [
+          0.6822849000000133,
+          0.723422600000049,
+          0.717000000000553
+        ],
+        "median": 0.717000000000553
+      },
+      "prim": {
+        "seconds": [
+          1.6644591000003857,
+          1.6838306999998167,
+          1.858585199999652
+        ],
+        "median": 1.6838306999998167
+      }
+    }
+  ]
+}
